@@ -9,6 +9,7 @@ button {
   border: unset;
   background: unset;
   transition: all 0.2s ease-in-out;
+  border-radius: 5px;
 }
 
 nav {
@@ -63,10 +64,10 @@ nav {
   display: grid;
   grid-template-columns: 1fr 2fr;
   font-family: Arial, Helvetica, sans-serif;
-  height: 13em;
-  padding: 3em 0 0 5em;
+  padding: 3em 0 2em 5em;
   border-bottom: 0.2px solid #dbdbdb;
   margin-top: 5em;
+  margin-bottom: 2em;
 }
 
 .profile-photo {
@@ -107,6 +108,23 @@ nav {
   background-color: #0081d6;
 }
 
+.edit-bio-form input {
+  width: 50%;
+  height: 2em;
+  border: 0.1em solid #dbdbdb;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.edit-bio-form button {
+  margin: 1em 1em 0 0;
+}
+
+.edit-bio-form .cancel-button {
+  background-color: #890000;
+}
+
 #addPhotoInput {
   display: none;
 }
@@ -124,8 +142,6 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 1.7em;
   column-gap: 1em;
-  margin-top: 3.5em;
-  margin-bottom: 2em;
 }
 
 .item {
@@ -154,8 +170,12 @@ nav {
   background-color: #890000;
   color: #fff;
   border: 1px solid #c8c8c8;
-  border-radius: 5px;
   transform: scale(1.5);
+}
+
+.delete-button:hover {
+  background-color: #670000;
+  color: #fff;
 }
 
 .item:hover .delete-button {
