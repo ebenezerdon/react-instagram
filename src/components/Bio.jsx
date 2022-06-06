@@ -6,7 +6,7 @@ const Bio = () => {
   const [nameOfUser, setNameOfUser] = useState('Ebenezer Don')
   const [aboutUser, setAboutUser] = useState('Building Newdev.io - Learn to code and connect with the best minds.')
   const [editFormIsOpen, setEditFormIsOpen] = useState(false)
-  const [profilePhoto, setProfilePhoto] = useState(profileIcon)
+  const [profilePhoto, setProfilePhoto] = useState(localStorage.getItem('profilePhoto') || profileIcon)
   // explain useEffect hook. setFormIsOpen to true by default as an example
 
   const updateUserDetails = (event) => {
@@ -19,6 +19,7 @@ const Bio = () => {
   const updateProfilePhoto = async () => {
     const newProfilePhoto = await getPhotoUrl('#profilePhotoInput')
     setProfilePhoto(newProfilePhoto)
+    localStorage.setItem('profilePhoto', newProfilePhoto)
   }
 
   const editForm = (
