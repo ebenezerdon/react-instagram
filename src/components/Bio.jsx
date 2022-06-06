@@ -7,10 +7,10 @@ const Bio = () => {
   const [editFormIsOpen, setEditFormIsOpen] = useState(false)
   // explain useEffect hook. setFormIsOpen to true by default as an example
 
-  const updateUserDetails = (e) => {
-    e.preventDefault()
-    setNameOfUser(e.target.nameOfUser.value)
-    setAboutUser(e.target.aboutUser.value)
+  const updateUserDetails = (event) => {
+    event.preventDefault()
+    setNameOfUser(event.target.nameOfUser.value)
+    setAboutUser(event.target.aboutUser.value)
     setEditFormIsOpen(false)
   }
 
