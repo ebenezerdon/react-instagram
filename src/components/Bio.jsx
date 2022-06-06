@@ -1,8 +1,17 @@
+import profileIcon from '../assets/profileIcon.svg'
+
 const Bio = () => {
   return (
-    <>
-      <h1>Bio</h1>
-    </>
+    <section className="bio">
+      <div className="profile-photo">
+        <img src={profileIcon} alt="profile" />
+      </div>
+      <div className="profile-info">
+        <p className="name">Ebenezer Don</p>
+        <p className="description">Building Newdev.io - Learn to code and connect with the best minds.</p>
+        <button>Edit</button>
+      </div>
+    </section>
   )
 }
 
