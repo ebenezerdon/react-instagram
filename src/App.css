@@ -70,6 +70,10 @@ nav {
   margin-bottom: 2em;
 }
 
+#profilePhotoInput {
+  display: none;
+}
+
 .profile-photo {
   background: #000;
   width: 10em;
