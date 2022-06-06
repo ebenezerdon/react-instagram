@@ -29,7 +29,7 @@ const Bio = () => {
 
     setUserDetails(objectData)
     await db.bio.put(objectData, 'info')
-    // setEditFormIsOpen(false)
+    setEditFormIsOpen(false)
   }
 
   const updateProfilePhoto = async () => {
