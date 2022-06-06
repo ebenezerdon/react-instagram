@@ -15,7 +15,7 @@ const Bio = () => {
 
   return (
     <section className="bio">
-      <div className="profile-photo">
+      <div className="profile-photo" role="button" title="Click to edit photo">
         <img src={profileIcon} alt="profile" />
       </div>
       <div className="profile-info">
