@@ -1,13 +1,15 @@
-import './App.css'
 import { Bio, Gallery, Nav } from './components'
+import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Nav />
-      <Bio />
-      <Gallery />
-    </div>
+      <div className="container">
+        <Bio />
+        <Gallery />
+      </div>
+    </>
   )
 }
 
