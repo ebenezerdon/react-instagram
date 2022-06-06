@@ -71,18 +71,23 @@ nav {
 }
 
 .profile-photo {
+  background: #000;
   width: 10em;
   height: 10em;
   border-radius: 50%;
   margin-top: 0.5em;
 }
 
-.profile-photo > img {
+.profile-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.profile-photo img:hover {
+  opacity: 0.7;
 }
 
 .profile-info .name {
