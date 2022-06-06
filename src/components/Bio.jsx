@@ -8,7 +8,7 @@ const Bio = () => {
       </div>
       <div className="profile-info">
         <p className="name">Ebenezer Don</p>
-        <p className="description">Building Newdev.io - Learn to code and connect with the best minds.</p>
+        <p className="about">Building Newdev.io - Learn to code and connect with the best minds.</p>
         <button>Edit</button>
       </div>
     </section>
