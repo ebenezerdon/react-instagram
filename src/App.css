@@ -111,7 +111,7 @@ nav {
   display: none;
 }
 
-.add-photo {
+.add-photo-button {
   transform: scale(3);
   position: fixed;
   bottom: 5em;
@@ -119,15 +119,12 @@ nav {
   cursor: pointer;
 }
 
-.gallery-nav {
-  height: 3.5em;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 1.7em;
   column-gap: 1em;
+  margin-top: 3.5em;
   margin-bottom: 2em;
 }
 
