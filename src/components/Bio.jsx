@@ -3,16 +3,20 @@ import { useState } from 'react'
 import profileIcon from '../assets/profileIcon.svg'
 
 const Bio = () => {
-  const [nameOfUser, setNameOfUser] = useState('Ebenezer Don')
-  const [aboutUser, setAboutUser] = useState('Building Newdev.io - Learn to code and connect with the best minds.')
+  const [userDetails, setUserDetails] = useState({
+    name: 'Ebenezer Don',
+    about: 'Building Newdev.io - Learn to code and connect with the best minds.',
+  })
   const [editFormIsOpen, setEditFormIsOpen] = useState(false)
   const [profilePhoto, setProfilePhoto] = useState(profileIcon)
   // explain useEffect hook. setFormIsOpen to true by default as an example
 
   const updateUserDetails = (event) => {
     event.preventDefault()
-    setNameOfUser(event.target.nameOfUser.value)
-    setAboutUser(event.target.aboutUser.value)
+    setUserDetails({
+      name: event.target.nameOfUser.value,
+      about: event.target.aboutUser.value,
+    })
     setEditFormIsOpen(false)
   }
 
@@ -23,8 +27,8 @@ const Bio = () => {
 
   const editForm = (
     <form className="edit-bio-form" onSubmit={(e) => updateUserDetails(e)}>
-      <input type="text" id="" name="nameOfUser" defaultValue={nameOfUser} placeholder="Your name" required />
-      <input type="text" id="" name="aboutUser" defaultValue={aboutUser} placeholder="About you" required />
+      <input type="text" id="" name="nameOfUser" defaultValue={userDetails.name} placeholder="Your name" required />
+      <input type="text" id="" name="aboutUser" defaultValue={userDetails.about} placeholder="About you" required />
       <br />
       <button type="button" className="cancel-button" onClick={() => setEditFormIsOpen(false)}>
         Cancel
@@ -45,8 +49,8 @@ const Bio = () => {
       </label>
 
       <div className="profile-info">
-        <p className="name">{nameOfUser}</p>
-        <p className="about">{aboutUser}</p>
+        <p className="name">{userDetails.name}</p>
+        <p className="about">{userDetails.about}</p>
 
         {editFormIsOpen ? editForm : editButton}
       </div>
