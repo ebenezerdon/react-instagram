@@ -1,6 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import getPhotoUrl from 'get-photo-url'
-import { db } from '../data'
+import { db } from '../dexie'
 
 const Gallery = () => {
   const allPhotos = useLiveQuery(() => db.gallery.toArray(), [])

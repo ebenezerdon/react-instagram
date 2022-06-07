@@ -1,7 +1,7 @@
 import getPhotoUrl from 'get-photo-url'
 import { useEffect, useState } from 'react'
 import profileIcon from '../assets/profileIcon.svg'
-import { db } from '../data'
+import { db } from '../dexie'
 
 const Bio = () => {
   const [userDetails, setUserDetails] = useState({
