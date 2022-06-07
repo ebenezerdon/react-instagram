@@ -82,6 +82,15 @@ nav {
   margin-top: 0.5em;
 }
 
+@media screen and (max-width: 600px) {
+  .profile-photo {
+    width: 5em;
+    height: 5em;
+    margin-top: 3em;
+    margin-right: 2em;
+  }
+}
+
 .profile-photo img {
   width: 100%;
   height: 100%;
