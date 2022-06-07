@@ -1,3 +1,9 @@
+import pexels1 from '../assets/pexels1.jpeg'
+import pexels2 from '../assets/pexels2.jpeg'
+import pexels3 from '../assets/pexels3.jpeg'
+import pexels4 from '../assets/pexels4.jpeg'
+import pexels5 from '../assets/pexels5.jpeg'
+
 const Gallery = () => {
   return (
     <>
@@ -8,27 +14,27 @@ const Gallery = () => {
 
       <section className="gallery">
         <div className="item">
-          <img src="https://images.pexels.com/photos/4835026/pexels-photo-4835026.jpeg" className="item-image" alt="" />
+          <img src={pexels1} className="item-image" alt="" />
           <button className="delete-button">Delete</button>
         </div>
 
         <div className="item">
-          <img src="https://images.pexels.com/photos/4940300/pexels-photo-4940300.jpeg" className="item-image" alt="" />
+          <img src={pexels2} className="item-image" alt="" />
           <button className="delete-button">Delete</button>
         </div>
 
         <div className="item">
-          <img src="https://images.pexels.com/photos/1719344/pexels-photo-1719344.jpeg" className="item-image" alt="" />
+          <img src={pexels3} className="item-image" alt="" />
           <button className="delete-button">Delete</button>
         </div>
 
         <div className="item">
-          <img src="https://images.pexels.com/photos/4006576/pexels-photo-4006576.jpeg" className="item-image" alt="" />
+          <img src={pexels4} className="item-image" alt="" />
           <button className="delete-button">Delete</button>
         </div>
 
         <div className="item">
-          <img src="https://images.pexels.com/photos/4918481/pexels-photo-4918481.jpeg" className="item-image" alt="" />
+          <img src={pexels5} className="item-image" alt="" />
           <button className="delete-button">Delete</button>
         </div>
       </section>
