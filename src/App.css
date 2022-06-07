@@ -90,6 +90,15 @@ nav {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 600px) {
+  .profile-photo {
+    width: 5em;
+    height: 5em;
+    margin-top: 3em;
+    margin-right: 2em;
+  }
+}
+
 .profile-info .name {
   font-size: 1.7em;
   color: #545454;
